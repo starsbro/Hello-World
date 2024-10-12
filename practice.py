@@ -6,9 +6,9 @@ def right_justify(s):
 right_justify('monty')
 right_justify('peter')
 
-def do_twice(f):
-    f()
-    f()
+def do_twice(f, x):
+    f(x)
+    f(x)
 
 def print_spam():
     print('spam')
