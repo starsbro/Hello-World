@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewpoint" content="width=device-width"/>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header_title">Welcome</h1>
+        </header>
+        <main>
+            <form class="register" action="/submit" method="POST">
+                
+                <label class="register__label" for="name">Name:</label>
+                <input class="register__input" id="name" name="name" required pattern="\w{3,6}" title="3-6 characters"/>
+
+                <label class="register__label" for="email">Email:</label>
+                <input class="register__input" id="email" name="email" required type="email"/>
+                
+                
+                <label class="register__label3" for="annoyMeCheckbox">
+                    <input class="register__input" type="checkbox" id="annoyMeCheckbox" name="annoy-me" checked>
+                    Do you want us to send you annoying emails?
+                </label>
+               
+                <select class="register__select" name="tier">
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+                
+                <button class="register__submit" type="submit">Register</button>
+
+            </form>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__item"><a helf="/">Privacy Policy</a></li>
+            </ul>
+        </footer>  
+    </body>
+</html>

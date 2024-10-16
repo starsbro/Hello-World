@@ -1,0 +1,13 @@
+.valuepage__content {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.valuepage__content--others {
+    color: black;
+    font-size: 1rem;
+}
+
+.my-button {
+    color: blue;
+}

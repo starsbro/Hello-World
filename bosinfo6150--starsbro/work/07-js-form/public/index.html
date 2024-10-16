@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewpoint" content="width=device-width"/>
+        <script defer src="my-file.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header_title">Welcome</h1>
+        </header>
+        <main>
+            <form class="register" action="/register" method="POST">
+                
+                <label class="register__label" >
+                    <span class="register__name-label">Name</span>
+                    <span class="register__error register__error--name"></span>
+                    <input class="register__name" name="name" type="text"/>
+                </label>
+                
+
+                <label class="register__label" >
+                    <span class="register__email-label">Email</span>
+                    <span class="register__error register__error--email"></span>
+                    <input class="register__email" name="email" type="text"/>
+                </label>
+                
+                
+                <label class="register__label" >
+                    <span class="register__confirm-label">Confirm Email</span>
+                    <span class="register__error register__error--confirm"></span>
+                    <input class="register__confirm" name="confirm" type="text"/>
+                </label>
+                
+               
+                <div class="register__checkbox">
+                    <label for="wants-spam">Do you want to receive spam?</label>
+                    <input type="checkbox" name="wants-spam" id="wants-spam" />
+                </div>
+
+                <select class="register__select" name="tier">
+                    <option value="">Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+                
+                <button class="register__submit" type="submit">Register</button>
+                
+            </form>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__item"><a helf="/">Privacy Policy</a></li>
+            </ul>
+        </footer>  
+    </body>
+</html>

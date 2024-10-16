@@ -1,0 +1,9 @@
+.contactpage__content {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.contactpage__content--others {
+    color: black;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,12 @@
+.reorder {
+    animation: fade-in 3s forwards;
+}
+
+@keyframes fade-in {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+  }

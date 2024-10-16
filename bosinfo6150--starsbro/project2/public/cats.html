@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title></title>
+        <link rel="stylesheet" href="cats_styles.css"> 
+        <script defer src="cats.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a class="skip-to-content-link" href="#main">Skip to content</a>
+            <a class="logo" href="/">
+                <img src="eduard-delputte-Ih7BQIgCqzU-unsplash.jpg" alt="This is a cute Cat." width="100" height="100">
+            </a>
+            <h1 class="header__title">Famous Internet Cats</h1>
+            <nav class="hamburger-nav">
+                <button class="hamburger-menu" type = "button"></button>
+                <ul class="menu__submenu submenu">
+                    <li class="submenu__item"><a class="submenu__link" href="/">Home</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="/cats.html">Famous cats</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="/events.html">Cat Events</a></li>
+                </ul>
+            </nav>   
+        </header>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/">Home</a></li>
+                <li class="menu__item"><a href="/cats.html">Famous cats</a></li>
+                <li class="menu__item"><a href="/events.html">Cat Events</a></li>
+            </ul>
+        </nav>
+        <div>
+            <dialog class="modal">
+                <form class="register" action="/subscribe" method="POST">
+                
+                    <p class="register__title">Subscribe to the Latest Mews!</p>
+
+                    <label class="register__label" >
+                        <span class="register__email-label">Email:  * required</span>
+                        <input class="register__email" name="email" type="text"/>
+                        <span class="register__error register__error--email"></span>
+                    </label>
+
+                    <label class="register__label" >
+                        <span class="register__confirm-label">Confirm Email:  * required</span>
+                        <input class="register__confirm" name="confirm" type="text"/>
+                        <span class="register__error register__error--confirm"></span>    
+                    </label>
+                     
+                    <button class="subscribe" type="submit">Subscribe</button>
+                    <button class="cancel" type="button">Cancel</button>  
+                </form> 
+            </dialog>
+        </div>
+        <main class="main">
+            <div class="cards">
+                <div class="card">
+                    <span class="card__title">Jorts</span>
+                    <img src="the-lucky-neko-tUTlUel_Nvs-unsplash.jpg" alt="This is a cute cate, Jorts" width="200" height="200"/>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">
+                        Lorem, ipsum dolorc
+                        <a class="card__link" href="#">Subscribe</a>
+                        Lorem, ipsum.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="card__title">Jean</span>
+                    <img src="kabo-BHJs5TZ-Nt0-unsplash.jpg" alt="This is a cute cate, Jean." width="200" height="200"/>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos?
+                        <a class="card__link" href="#">Subscribe</a>
+                        Lorem, ipsum.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="card__title">Maru</span>
+                    <img src="kabo-bg9jOHUtmBs-unsplash.jpg" alt="This is a cute cate, Maru." width="200" height="200"/>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos?
+                        <a class="card__link" href="#">Subscribe</a>
+                        Lorem, ipsum.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="card__title">Nyancat</span>
+                    <img src="jan-kopriva-IZ7W626JoQs-unsplash.jpg" alt="This is a cute cate, Nyancat." width="200" height="200"/>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos?
+                        <a class="card__link" href="#">Subscribe</a>
+                        Lorem, ipsum.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="card__title">Grumpy Cat</span>
+                    <img src="kabo-OouGoqQuf64-unsplash.jpg" alt="This is a cute cate, Grumpy Cat." width="200" height="200"/>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos?
+                        <a class="card__link" href="#">Subscribe</a>
+                        Lorem, ipsum.
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="card__title">LiI Bub</span>
+                    <img src="sabina-sturzu-sHtJeNIzPe8-unsplash.jpg" alt="This is a cute cate, LiI Bub." width="200" height="200"/>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit.</p>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quos?
+                        <a class="card__link" href="#">Subscribe</a>
+                        Lorem, ipsum.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="/privacy.html">Privacy Policy</a></li>
+                <li class="footer__item"><a href="/jobs.html">Work for Us</a></li>
+                <li class="footer__item"><a href="/contact.html">Contact Us</a></li>
+                <li class="footer__item"><a href="/social.html">Social Media</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

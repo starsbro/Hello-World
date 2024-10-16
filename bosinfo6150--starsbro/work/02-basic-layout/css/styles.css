@@ -1,0 +1,82 @@
+*, *::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#homepage {
+    display: grid;
+    grid-template-columns: 20% auto; /* 2 cols */
+    grid-template-rows: auto auto auto; /* 3 rows */
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+.local-menu {
+    grid-area: menu;
+}
+
+main {
+    grid-area: main;
+    border-left: 1px solid black;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.menu  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.local-menu>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   /* align-items: baseline;*/
+
+    list-style-type: none;
+    padding: 3rem 0.2rem;
+}
+
+/* turnning location*/
+header, main, footer, p {
+    padding: 1rem 0.5rem;
+}
+
+a {
+    padding: 1.5rem 0rem;
+}
+
+.local-menu li {
+    padding: 1rem 0.5rem;
+}
+
+/* turnning color*/
+.local-menu, main {
+    background-color: pink;
+}
+
+header, footer {
+    background-color: plum;
+}
+
+/* turnning hover color*/
+.menu a:hover {
+    background-color: rebeccapurple;
+    color: white;
+  }
+
+.local-menu li:hover {
+    background-color: plum;
+}
+

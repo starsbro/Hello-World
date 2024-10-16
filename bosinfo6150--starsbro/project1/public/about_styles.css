@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+  
+    min-height: 100dvh;
+    
+    background-color: papayawhip;
+    color: black;
+
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+
+.header,.primarv-nav, .footer {
+    background-color: burlywood;
+}
+
+.header {
+    grid-area:header;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+    padding: 2rem;
+}
+
+.Logo {
+    position: fixed;
+    top:1rem;
+    right: 1rem;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 0px;
+
+    list-style-type: none;
+
+}
+
+.menu__item:hover .submenu,
+.menu__item:focus-within .submenu {
+    max-height: initial;
+}
+
+.menu__toggle {
+    border: none;
+    padding: 0;
+
+    background-color: inherit;
+    color: blue;
+
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.submenu {
+    position: absolute;
+
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: burlywood;
+
+    list-style-type: none;
+}
+
+.submenu__link {
+    padding: 0 0.5rem;
+}
+.submenu__link:hover {
+    display: inline-block;
+
+    width: 100%;
+
+    background-color: plum;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+p {
+    grid-column: span 12; /*  Paragraph display all 12 columns.*/
+    border:1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    background-color: white;
+}
+
+.footer__list {
+    padding: 0.5rem;
+    text-align: center;
+    list-style-type: none;
+}

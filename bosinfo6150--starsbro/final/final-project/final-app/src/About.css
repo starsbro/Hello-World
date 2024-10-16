@@ -1,0 +1,9 @@
+.aboutpage__content {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.aboutpage__content--others {
+    color: black;
+    font-size: 1.2rem;
+}

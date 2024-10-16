@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register Page</title>
+        <link rel="stylesheet" href="register_styles.css">
+        <meta name="viewpoint" content="width=device-width"/>
+    </head>
+    <body>
+        <div id="regiser">
+            <header class="header">
+                <a class="Logo" href="index.html">
+                    <img src="cedric-vt-IuJc2qh2TcA-unsplash.jpg" alt="This is a cute Cat." width="50" height="50">
+                </a>
+                <h1 class="header_title">Register Page</h1>
+            </header>
+            <nav class="primarv-nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <button class="menu__toggle" type = "button">Register</button>
+                        <ul class="menu__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="/">Cat</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="/">Dog</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="/">Animal</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <button class="menu__toggle" type="button">More</button>
+                        <ul class="menu__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="/">Expend Methods</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="/">Cat Correlated</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="/">Dog Correlated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="register">
+                <main class="main">
+                    <form class="register" action="/regiser" method="POST">
+                        
+                        <label class="register__label" for="name">Name:</label>
+                        <input class="register__input" id="name" name="name" required pattern="\w{3,6}" title="3-6 characters"/>
+
+                        <label class="register__label" for="email">Email:</label>
+                        <input class="register__input" id="email" name="email" required type="email"/>
+                        
+                        <label class="register__label3" for="annoyMeCheckbox">
+                            <input class="register__input" type="checkbox" id="annoyMeCheckbox" name="annoy-me" checked>
+                            Do you want us to send you annoying emails?
+                        </label>
+                    
+                        <select class="register__select" name="tier">
+                            <option value="">Please select</option>
+                            <option value="1">Silver Tier</option>
+                            <option value="2">Gold Tier</option>
+                            <option value="3">Platinum Tier</option>
+                        </select>
+
+                        <button class="register__submit" type="register">Register</button>
+                    </form>
+                </main>
+            </div>  
+            <footer class="footer">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="privacy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </footer>
+    </div>
+    </body>
+</html>

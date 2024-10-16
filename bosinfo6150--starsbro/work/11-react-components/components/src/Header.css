@@ -1,0 +1,29 @@
+.header {
+    display: grid;
+    grid-template-areas:
+    "header-logo header-title"
+    "header-nav header-nav "
+    ;
+    grid-template-columns: auto 1fr;
+    
+    background-color: var(--color-header-bg);
+}
+
+.header__logo {
+    grid-area: header-logo;
+}
+
+.header__title {
+    grid-area:header-title;
+    text-align: center;
+}
+
+.header__nav {
+    grid-area: header-nav;
+
+    background-color: lime;
+}
+
+.pageName {
+    color:blue;
+}

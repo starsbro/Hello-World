@@ -1,0 +1,28 @@
+.register {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+       
+    gap:1rem;
+}
+.register__title {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.register__label {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.register__submit {
+    grid-column: span 2;
+    background-color: lime;
+    margin:0 auto;
+    font-size: 1.2rem;
+    
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}

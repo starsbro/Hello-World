@@ -1,0 +1,47 @@
+.header__nav {
+    padding: 0.5rem;
+}
+
+.cards {
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    padding: 1rem;
+    
+}
+.card {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    place-items:center;
+    
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    background-color: white;
+    
+}
+
+.card:hover {
+    transform: translate(-.5rem, -1rem) rotate(1deg);
+}
+
+.card__link {
+    margin-top: auto;
+}
+
+@media(max-width: 40rem) {
+    .cards {
+        gap: 1rem;
+        padding:0;
+    }
+
+    .card{
+        grid-column: span 12;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}

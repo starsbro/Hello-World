@@ -1,0 +1,31 @@
+.global-nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.global-nav__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+  }
+
+.global-nav__link:hover {
+    background-color: dodgerblue;
+    color: black;
+  }
+
+@media (min-width: 40rem) {
+  .global-nav__list {
+    flex-direction: row;
+  }
+  
+  .global-nav__toggle {
+    display: none;
+  }
+}
