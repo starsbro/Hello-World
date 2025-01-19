@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <title>ARIA Example</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <a class="skiplink" href="#main">Skip to Content</a>
+  <header class="header">
+    <h1>ARIA Example</h1>
+    <nav class="nav">
+      <ul class="menu">
+        <li class="menu__item">
+          <button class="menu__topic" type="button" aria-expanded="false" aria-controls="famous-cats">Famous Cats</button>
+          <ul class="menu__submenu submenu" id="famous-cats">
+            <li class="submenu__item"><a href="/cats/jorts.html">Jorts, King of Mishaps</a></li>
+            <li class="submenu__item"><a href="/cats/jean.html">Jean, the Union Organizer</a></li>
+            <li class="submenu__item"><a href="/cats/maru.html">Maru, Explorer of Boxes</a></li>
+            <li class="submenu__item"><a href="/cats/nyan.html">Nyancat, Rainbow Singer of Songs</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <button class="menu__topic" type="button" aria-expanded="false" aria-controls="about">About This Site</button>
+          <ul class="menu__submenu submenu" id="about">
+            <li class="submenu__item"><a href="/purpose.html">Site Purpose</a></li>
+            <li class="submenu__item"><a href="/history.html">History</a></li>
+            <li class="submenu__item"><a href="/privacy.html">Privacy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main" id="main">
+    <p>Amet impedit commodi eius pariatur quam. Obcaecati libero dicta ea natus sed? Placeat quos!</p>
+    <p>Sit culpa enim odio voluptates facilis! Repudiandae qui facilis similique ipsam rem sapiente. Ducimus?</p>
+    <p>Elit sint eos molestias nesciunt perferendis Hic magni corporis porro perferendis maiores sed repudiandae.</p>
+    <p>Lorem assumenda enim quibusdam delectus architecto? Rerum ea quibusdam officia cum voluptatem, ea, itaque</p>
+    <p>Consectetur culpa ab asperiores adipisicing distinctio ea Nesciunt velit fugit reiciendis reprehenderit doloremque fuga?</p>
+    <p>Elit vitae amet adipisci ullam vero, blanditiis Mollitia odio repellat maxime facere repellendus? Rerum</p>
+    <p>Dolor vel maiores laudantium officiis quod Ab eum molestias laboriosam explicabo est quaerat, nostrum.</p>
+    <p>Ipsum quidem doloremque est quae necessitatibus Illo quisquam et culpa deserunt natus. Consequuntur consequatur.</p>
+    <p>Amet expedita odio rem qui deserunt deserunt perferendis cum Molestiae eos natus adipisci laborum?</p>
+    <p>Amet nam incidunt tempore aliquid aliquam Similique quia nesciunt suscipit debitis sapiente. Eos numquam.</p>
+  </main>
+  <footer class="footer">
+    <p>Footer text is rarely exciting, but here's a link to <a href="/privacy.html">Our Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
